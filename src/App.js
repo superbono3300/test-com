@@ -146,7 +146,7 @@ class App extends Component {
         <Control onChangeControl={function(mode){
                 //console.log(mode);
                 //alert('컨트롤 성공');
-                var _mode = 'delete';
+                var _mode = mode;
                 if(_mode === 'delete') {
                   if(window.confirm('delete OK?')) {
                     var _contents = Array.from(this.state.contents);
